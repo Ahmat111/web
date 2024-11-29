@@ -1,0 +1,439 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+        }
+
+        .start-screen {
+            display: grid;wwww
+            grid-template-columns: repeat(6, 150px); 
+            grid-gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .tile {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #0078D7; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .tile:hover {
+            transform: scale(1.20);
+        }
+
+        /* Определение размеров больших плиток */
+        .tile.wide {
+            grid-column: span 2; /* Плитка занимает 2 колонки */
+        }
+
+        .tile.mail { background-color: #00A4EF; }
+        .tile.calendar { background-color: #4CAF50; }
+        .tile.internet-explorer { background-color: #0078D7; }
+        .tile.store { background-color: #008577; }
+        .tile.people { background-color: #F44336; }
+        .tile.photos { background-color: #9C27B0; }
+        .tile.maps { background-color: #FF5722; }
+        .tile.messaging { background-color: #673AB7; }
+        .tile.sports { background-color: #03A9F4; }
+        .tile.finance { background-color: #8BC34A; }
+        .tile.desktop { background-color: #009688; }
+        .tile.weather { background-color: #3F51B5; }
+        .tile.news { background-color: #F44336; }
+        .tile.bing { background-color: #FFC107; }
+        .tile.travel { background-color: #00BCD4; }
+        .tile.games { background-color: #4CAF50; }
+        .tile.camera { background-color: #9C27B0; }
+        .tile.music { background-color: #FF5722; }
+        .tile.video { background-color: #FF9800; }
+
+    
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #1c1c1c;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #555;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Start</h1>
+    <div class="user">
+        <div class="user-icon"></div>
+        <span>User</span>
+    </div>
+</div>
+
+<div class="start-screen">
+    <div class="tile mail">
+        <img src="https://cdn.icon-icons.com/icons2/1584/PNG/96/3721672-instagram_108066.png" alt="Mail Icon">
+    </div>
+    <div class="tile calendar">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/whatsapp_logo_icon_147205.png" alt="Calendar Icon">
+    </div>
+    <div class="tile internet-explorer">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/youtube_logo_icon_147199.png" alt="Internet Explorer Icon">
+    </div>
+    <div class="tile store">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/nintendo_logo_icon_147258.png" alt="Store Icon">
+    </div>
+    <div class="tile people">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/mail_ru_logo_icon_147267.png" alt="People Icon">
+    </div>
+    <div class="tile photos">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/viber_logo_icon_147211.png" alt="Photos Icon">
+    </div>
+    <div class="tile maps wide">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/patreon_logo_icon_147253.png" alt="Maps Icon">
+    </div>
+    <div class="tile messaging">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/kakaotalk_logo_icon_147272.png" alt="Messaging Icon">
+    </div>
+    <div class="tile sports">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/epic_games_logo_icon_147294.png" alt="Sports Icon">
+    </div>
+    <div class="tile finance">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/safari_logo_icon_147241.png" alt="Finance Icon">
+    </div>
+    <div class="tile desktop">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/vk_logo_icon_147212.png" alt="Desktop Icon">
+    </div>
+    <div class="tile weather">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/spotify_logo_icon_147234.png" alt="Weather Icon">
+    </div>
+    <div class="tile news">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/firefox_logo_icon_147288.png" alt="News Icon">
+    </div>
+    <div class="tile bing wide">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/microsoft_logo_icon_147261.png" alt="Bing Icon">
+    </div>
+    <div class="tile travel">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/edge_logo_icon_147295.png" alt="Travel Icon">
+    </div>
+    <div class="tile games">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/steam_logo_icon_147233.png" alt="Games Icon">
+    </div>
+    <div class="tile camera">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/xbox_logo_icon_147202.png" alt="Camera Icon">
+    </div>
+    <div class="tile music">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/pinterest_logo_icon_147250.png" alt="Music Icon">
+    </div>
+    <div class="tile video">
+        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/96/snapchat_logo_icon_147235.png" alt="Video Icon">
+    </div>
+</div>
+
+</body>
+</html>
+
+ -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон "Ваш Авто"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Автосалон "Ваш Авто"</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Наши автомобили</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Лучший выбор автомобилей для вас!</h2>
+            <p>Мы предлагаем широкий выбор новых и подержанных автомобилей различных марок и моделей.</p>
+        </section>
+
+        <section id="featured-cars">
+            <h2>Рекомендуемые автомобили</h2>
+            <div class="car">
+                <img src="car1.jpg" alt="Автомобиль 1">
+                <h3>Модель 1</h3>
+                <p>Описание автомобиля 1</p>
+            </div>
+            <div class="car">
+                <img src="car2.jpg" alt="Автомобиль 2">
+                <h3>Модель 2</h3>
+                <p>Описание автомобиля 2</p>
+            </div>
+         Добавьте больше автомобилей -->
+        <!-- </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Автосалон "Ваш Авто"</p>
+    </footer>
+</body>
+</html> -->
+
+
+
+<script src="app.js"></script>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самолет</title>
+    <style>
+
+         body {
+            background-image: url(https://cbgd.ask.fm/wallpapers2/073/768/180/992/original/QJmgeDTVR9Q.jpg);
+        }
+    
+
+        .cloud {
+            width: 10px;
+            height: 20px;
+            position: absolute;
+            left: -200px; /* Начальное положение за левым краем */
+            animation: fly 5s linear forwards; /* Анимация полета */
+            
+
+        }
+
+
+        @keyframes fly {
+            0% {
+                left: -200px; /* Начальное положение */
+            }
+            100% {
+                left: calc(100% - 250px); /* Конечное положение */
+            }
+        }
+
+    </style>
+    <body>  
+        <div class="body">
+        <div class="plane">
+        <div class="cloud">
+        <img src="https://www.astronics.com/Power_Motion_Hotspots_Airbus/images/Airbus_A320.png">
+        </div>
+        </div>
+    </body>
+</head>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitesquare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Whitesquare</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PARTNERS</a></li>
+                    <li><a href="#">CUSTOMERS</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2>FUSCE VITAE NIBH QUIS DIAM FERMENTUM</h2>
+            <p>Ettam adipiscing ultricies commodo.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>1</h3>
+                    <p>LOREM IPSUM DOLOP</p>
+                </div>
+                <div class="feature">
+                    <h3>2</h3>
+                    <p>ULTRICIES PELLENTESQUE</p>
+                </div>
+                <div class="feature">
+                    <h3>3</h3>
+                    <p>ALIQUAM IPSUM</p>
+                </div>
+                <div class="feature">
+                    <h3>4</h3>
+                    <p>NULLAM SED MAURIS UT</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-whitesquare">
+                <h2>ABOUT WHITESQUARE</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ulamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, molle non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="ceo-quote">
+                <h2>A WORD FROM OUR CEO</h2>
+                <blockquote>
+                    <p>“In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ulamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, molle non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”</p>
+                    <cite>Yane Naumoski, CEO</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="our-teams">
+                <h2>OUR TEAMS</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ulamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, molle non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="support">
+                <h2>21/7/365 SUPPORT</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ulamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, molle non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="our-clients">
+                <h2>OUR CLIENTS</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ulamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, molle non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PARTNERS</a></li>
+                        <li><a href="#">CUSTOMERS</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <p>Copyright © 2012 Whitesquare. A psdhtmlcss creation</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW офиц.сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#cars">Автомобили</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Добро пожаловать в автосалон "АвтоМир"! Мы предлагаем широкий выбор новых и подержанных автомобилей по выгодным ценам.</p>
+    </section>
+
+    <section id="cars">
+        <h2>Автомобили</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="car1.jpg" alt="Автомобиль 1">
+                <h3>Марка 1</h3>
+                <p>Описание автомобиля 1</p>
+                <a href="car1.html">Подробнее</a>
+            </div>
+            <div class="car-item">
+                <img src="car2.jpg" alt="Автомобиль 2">
+                <h3>Марка 2</h3>
+                <p>Описание автомобиля 2</p>
+                <a href="car2.html">Подробнее</a>
+            </div>
+            <div class="car-item">
+                <img src="car3.jpg" alt="Автомобиль 3">
+                <h3>Марка 3</h3>
+                <p>Описание автомобиля 3</p>
+                <a href="car3.html">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: г. Москва, ул. Ленина, д. 1</p>
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@avtomir.ru</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Автосалон "АвтоМир"</p>
+    </footer>
+</body>
+</html>

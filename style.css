@@ -1,0 +1,288 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #87878766;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(240, 240, 240, 0.287);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #053383;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #6d6d6dd5;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.feature {
+    background-color: #b0b0b0d5;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0 0 5px rgb(23, 24, 24);
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about-whitesquare, .ceo-quote {
+    width: 48%;
+    background-color: #6d6d6dd5;
+    padding: 20px;
+}
+
+.about-whitesquare h2, .ceo-quote h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.about-whitesquare p, .ceo-quote p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.ceo-quote blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.ceo-quote cite {
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #c7c7c7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.our-teams, .support, .our-clients {
+    width: 30%;
+    background-color: #6d6d6dd5;
+    padding: 20px;
+}
+
+.our-teams h2, .support h2, .our-clients h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.our-teams p, .support p, .our-clients p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+footer {
+    background-color: #a4a4a4;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-left: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #053383;
+    font-weight: bold;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 14px;
+} */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.car-item h3 {
+    margin: 10px 0;
+}
+
+.car-item p {
+    margin: 0;
+}
+
+.car-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.car-item a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
